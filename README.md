@@ -1,5 +1,6 @@
 # type.js
 这是一个实现打字机效果的小插件，依赖jQuery
+
 引入script文件后直接调用函数type即可
 ```
 type(selector,time_interval,input)
