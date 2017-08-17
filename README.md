@@ -5,8 +5,8 @@
 ```
 type(selector,time_interval,input)
 ```
-selector为选择器；
+selector:选择器；
 
-time_interval为每个字出现的时间间隔；
+time_interval:每个字出现的时间间隔；
 
-input为内容，```<br>```可实现换行
+input:内容，内容中输入```<br>```可实现换行
