@@ -1,4 +1,4 @@
-var type = function(label,time_interval,input) {
+var type = function(selector,time_interval,input) {
     // $(document.body).append('<style>p{display:inline}</style>')
     var text = input
     var splitArr=text.split('<br>')
@@ -26,22 +26,22 @@ var type = function(label,time_interval,input) {
         }
         for(var i=0; i< lengthArr.length; i++){
             if (t ===  lengthArr[i]) {
-                $(label+" i").before('<span>' + arr[t] + '</span><br />');
+                $(selector+" i").before('<span>' + arr[t] + '</span><br />');
                 t++;
                 return
             }
         }
         
-        $(label+" i").before('<span>' + arr[t] + '</span>');
+        $(selector+" i").before('<span>' + arr[t] + '</span>');
 
         t++;
     }, time_interval)
     setInterval(function(){
         setTimeout(function(){
-            $(label+" i").hide()
+            $(selector+" i").hide()
         },100)
         setTimeout(function(){
-            $(label+" i").show()
+            $(selector+" i").show()
         },700)
     },800)
 }
